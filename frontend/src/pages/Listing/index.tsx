@@ -1,7 +1,29 @@
+import MovieCard from "components/MovieCard";
 import Pagination from "components/pagination";
 
 export default function Listing() {
-    return(
-        <Pagination />
+    return (
+        <>
+            <Pagination />
+            <div className="container">
+                <div className="row">
+                    <div className="col-sm-6 col-lg-4 col-xl-3 col-xxl-2 mb-3">
+                        <MovieCard />
+                    </div>
+                    <div className="col-sm-6 col-lg-4 col-xl-3 col-xxl-2 mb-3">
+                        <MovieCard />
+                    </div>
+                    <div className="col-sm-6 col-lg-4 col-xl-3 col-xxl-2 mb-3">
+                        <MovieCard />
+                    </div>
+                    <div className="col-sm-6 col-lg-4 col-xl-3 col-xxl-2 mb-3">
+                        <MovieCard />
+                    </div>
+                    <div className="col-sm-6 col-lg-4 col-xl-3 col-xxl-2 mb-3">
+                        <MovieCard />
+                    </div>
+                </div>
+            </div>
+        </>
     )
 }
